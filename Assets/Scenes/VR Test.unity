@@ -419,6 +419,7 @@ GameObject:
   - component: {fileID: 910055374}
   - component: {fileID: 910055373}
   - component: {fileID: 910055375}
+  - component: {fileID: 910055376}
   m_Layer: 0
   m_Name: Vr rid
   m_TagString: Untagged
@@ -473,6 +474,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &910055376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910055372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 0}
 --- !u!1 &1130865242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1127,7 @@ MonoBehaviour:
     m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   gripAnimationAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Grip Animation
       m_Type: 0
@@ -1123,7 +1137,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
   handAnimator: {fileID: 1742117104}
 --- !u!1001 &2127611333
 PrefabInstance:
