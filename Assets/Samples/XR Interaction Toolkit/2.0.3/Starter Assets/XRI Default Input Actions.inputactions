@@ -546,7 +546,7 @@
                 {
                     "name": "",
                     "id": "99cb7ad1-51ec-4611-af68-92a85f2c17d6",
-                    "path": "<ViveController>{LeftHand}/trackpad",
+                    "path": "<XRController>{LeftHand}/Primary2DAxis",
                     "interactions": "Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)",
                     "processors": "",
                     "groups": "Noncontinuous Move",
@@ -557,9 +557,9 @@
                 {
                     "name": "",
                     "id": "8e383b1a-270f-4c20-819b-89a59cffb498",
-                    "path": "<ViveController>{LeftHand}/trackpad",
+                    "path": "<XRController>{LeftHand}/Primary2DAxis",
                     "interactions": "",
-                    "processors": "StickDeadzone(min=1.401298E-45)",
+                    "processors": "StickDeadzone",
                     "groups": "Continuous Move",
                     "action": "Move",
                     "isComposite": false,
@@ -824,7 +824,7 @@
                 {
                     "name": "",
                     "id": "fa59aed1-ae0b-4074-a58c-294b85f46228",
-                    "path": "<ViveController>/trackpadClicked",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -1021,7 +1021,7 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "00a4dc9f-1ee6-4349-b0e9-72d5dccaadd6",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -1063,40 +1063,12 @@
                 },
                 {
                     "name": "",
-                    "id": "bcf2ccc6-3fa6-4881-95bb-b943c2cffbbd",
-                    "path": "<XRController>{RightHand}/trackpad",
-                    "interactions": "",
+                    "id": "d6c08c3d-3d41-4695-994d-1ac9016a5a9e",
+                    "path": "<XRController>{RightHand}/Primary2DAxis",
+                    "interactions": "Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Turn",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "New action map",
-            "id": "3b8a4f96-4e03-4d3a-9a55-91646b067a6d",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "7710c727-8f6c-4afb-b2d6-28844af70838",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "b4afc267-b85c-446d-b3da-da431ba2e58e",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
