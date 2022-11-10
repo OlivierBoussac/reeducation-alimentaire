@@ -16,7 +16,7 @@ public class Colle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = Grab1.transform.position - decalage ;
-        Grab1.angularVelocity = Vector3.zero;
+       // this.transform.position = Grab1.transform.position - decalage ;
+        //Grab1.transform.Rotate(new Vector3(0, 0, 0));
     }
 }

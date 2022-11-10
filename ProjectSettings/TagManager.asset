@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Right Hand
   - Left Hand
+  - Plate
+  - Food
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Grab
+  - Player
+  - Ray
   - 
   - 
   - 
