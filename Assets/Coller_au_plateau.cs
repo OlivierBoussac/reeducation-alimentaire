@@ -8,7 +8,7 @@ public class Coller_au_plateau : MonoBehaviour
     public GameObject Plateau;
     public Collider objec;
     public bool colle;
-    public bool objectcoll�;
+    public bool objectcoll;
     public Vector3 diff;
     public General gen;
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class Coller_au_plateau : MonoBehaviour
     {
         Plateau = GameObject.Find("Tray_low");
         colle = false;
-        objectcoll� = false;
+        objectcoll = false;
         diff = new Vector3(0, -0.05f, 0);
         gen = GameObject.Find("Vr rid").GetComponent<General>();
     }
@@ -35,17 +35,17 @@ public class Coller_au_plateau : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.tag == "Food" && objectcoll� == false)
+        if (other.tag == "Food" && objectcoll == false)
         {
             objec = other;
             colle = true;
-            GameObject.Find("Contenu").GetComponent<TextMeshProUGUI>().text = other.name + " - 1.50 �";
+            GameObject.Find("Contenu").GetComponent<TextMeshProUGUI>().text = other.name + " - 1.50 ";
             gen.Total += 1.50f;
         }
     }
 
     public virtual void OnTriggerStay(Collider other)
     {
-        objectcoll� = true;
+        objectcoll = true;
     }
 }
