@@ -8,13 +8,13 @@ using UnityEngine.SceneManagement;
 public class Menu_General : MonoBehaviour
 {
     public string test;
-    public TextMeshProUGUI Desc;
+    private string Desc;
     public TextMeshProUGUI textDesc;
     // Start is called before the first frame update
     void Start()
     {
         TextMeshProUGUI textDesc = new TextMeshProUGUI();
-        textDesc = GameObject.Find("Description").GetComponent<TextMeshProUGUI>();  
+      
 
 
     }
@@ -22,11 +22,19 @@ public class Menu_General : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // textDesc.text = "hi"; 
+        if (Desc != null)
+        {
+            GameObject.Find("Description").GetComponent<TextMeshProUGUI>().text = Desc;
+        }
     }
 
     public void LancerGeneration()
     {
         SceneManager.LoadScene("VR Test");
+    }
+
+    public void setDesc (string description)
+    {
+        Desc = description;
     }
 }
