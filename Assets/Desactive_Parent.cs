@@ -9,17 +9,27 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Desactive_Parent : MonoBehaviour
 {
     private XRDirectInteractor interactor = null;
-   private Coller_au_plateau verifiecolle;
+    private XRRayInteractor RayinteractorL = null;
+    private XRRayInteractor RayinteractorR = null;
+    public GameObject Princial;
+    private Coller_au_plateau verifiecolle;
     private GameObject objet;
     private General gen;
     // Start is called before the first frame update
     void Start()
     {
+        //Principal = GameObject.Find("Principal");
         objet = GameObject.Find("Principal");
         verifiecolle = objet.GetComponent<Coller_au_plateau>();
-        gen = GameObject.Find("Vr rid").GetComponent<General>();
+        gen = GameObject.Find("XR Origin").GetComponent<General>();
         interactor = GetComponent<XRDirectInteractor>();
         interactor.onSelectEntered.AddListener(TakeInput);
+        RayinteractorL = GameObject.Find("Left Grab Ray").GetComponent<XRRayInteractor>();
+        RayinteractorL.onSelectEntered.AddListener(TakeInput);
+        RayinteractorL.onSelectExited.AddListener(EndInput);
+        RayinteractorR = GameObject.Find("Right Grab Ray").GetComponent<XRRayInteractor>();
+        RayinteractorR.onSelectEntered.AddListener(TakeInput);
+        RayinteractorR.onSelectExited.AddListener(EndInput);
     }
 
     // Update is called once per frame
@@ -31,14 +41,22 @@ public class Desactive_Parent : MonoBehaviour
     private void TakeInput(XRBaseInteractable interactable)
     {
 
-        if(interactable.tag == "Food" && verifiecolle.objectcollé == true)
+        if(interactable.tag == "Food" && verifiecolle.objectcollÃ© == true)
         {
+            
             verifiecolle.colle = false;
-            verifiecolle.objectcollé = false;
+            verifiecolle.objectcollÃ© = false;
             GameObject.Find("Contenu").GetComponent<TextMeshProUGUI>().text = "";
             gen.Total -= 1.50f;
+            Princial.GetComponent<BoxCollider>().isTrigger = false;
         }
-        //Debug.Log(verifiecolle.colle);
+       
 
     }
+
+    private void EndInput(XRBaseInteractable interactable) 
+    {
+        Princial.GetComponent<BoxCollider>().isTrigger = true;
+    }
+
 }

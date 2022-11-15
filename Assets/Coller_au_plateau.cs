@@ -18,7 +18,7 @@ public class Coller_au_plateau : MonoBehaviour
         colle = false;
         objectcollé = false;
         diff = new Vector3(0, -0.05f, 0);
-        gen = GameObject.Find("Vr rid").GetComponent<General>();
+        gen = GameObject.Find("XR Origin").GetComponent<General>();
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class Coller_au_plateau : MonoBehaviour
         {
             objec.transform.position = this.transform.position + diff;
             objec.transform.rotation = this.transform.rotation * Quaternion.Euler(-90, 0, 0);
-            Debug.Log(this.transform.position);
+            //Debug.Log(this.transform.position);
         }
     }
 
@@ -48,4 +48,7 @@ public class Coller_au_plateau : MonoBehaviour
     {
         objectcollé = true;
     }
-}
+
+
+
+    }
