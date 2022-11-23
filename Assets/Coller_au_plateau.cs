@@ -11,7 +11,6 @@ public class Coller_au_plateau : MonoBehaviour
     public bool objectcollé;
     public Vector3 diff;
     public General gen;
-    public string objet = "";
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +47,6 @@ public class Coller_au_plateau : MonoBehaviour
     public virtual void OnTriggerStay(Collider other)
     {
         objectcollé = true;
-        objet = other.name;
     }
 
 

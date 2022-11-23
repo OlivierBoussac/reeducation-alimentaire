@@ -306,7 +306,7 @@
                 {
                     "name": "",
                     "id": "487f4f2e-9e9b-49aa-b0f2-4037a24624f5",
-                    "path": "<XRInputV1::HTC::HTCViveControllerOpenXR>{LeftHand}/trackpadclicked",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
@@ -1069,17 +1069,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Turn",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5b5c69d3-bce5-4612-9735-eb49b7bddfb2",
-                    "path": "<XRController>{RightHand}/trackpad",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
