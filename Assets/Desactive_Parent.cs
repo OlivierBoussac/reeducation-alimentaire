@@ -40,10 +40,10 @@ public class Desactive_Parent : MonoBehaviour
 
     private void TakeInput(XRBaseInteractable interactable)
     {
-
-        if(interactable.tag == "Food" && verifiecolle.objectcollé == true)
+        
+        if(interactable.name == verifiecolle.objet && verifiecolle.objectcollé == true)
         {
-            
+           
             verifiecolle.colle = false;
             verifiecolle.objectcollé = false;
             GameObject.Find("Contenu").GetComponent<TextMeshProUGUI>().text = "";
