@@ -1,0 +1,100 @@
+{
+  "Nutritions": [
+    {
+      "AlimentName": "donutNature",
+      "Protéines": 7.25,
+      "Glucides": 39.4,
+      "Lipides": 23.7,
+      "Sucres": 10.7,
+      "AGSaturés": 9.46,
+      "Sel": 1.11,
+      "Prix": 1.50,
+      "Categorie": "viennoiseries",
+      "Masse": 57
+    },
+    {
+      "AlimentName": "donutChocolat",
+      "Protéines": 7.31,
+      "Glucides": 45.9,
+      "Lipides": 22.5,
+      "Sucres": 18.6,
+      "AGSaturés": 8.41,
+      "Sel": 0.7,
+      "Prix": 2.0,
+      "Categorie": "viennoiseries",
+      "Masse": 70
+    },
+    {
+      "AlimentName": "cupcake",
+      "Protéines": 4.19,
+      "Glucides": 55.2,
+      "Lipides": 12.6,
+      "Sucres": 35.8,
+      "AGSaturés": 1.6,
+      "Sel": 0.59,
+      "Prix": 2.0,
+      "Categorie": "viennoiseries",
+      "Masse": 110
+    },
+    {
+      "AlimentName": "bagel",
+      "Protéines": 10.2,
+      "Glucides": 47.3,
+      "Lipides": 3.98,
+      "Sucres": 5.36,
+      "AGSaturés": 1.02,
+      "Sel": 1.08,
+      "Prix": 1.0,
+      "Categorie": "viennoiseries",
+      "Masse": 50
+    },
+    {
+      "AlimentName": "pain",
+      "Protéines": 9.01,
+      "Glucides": 54.4,
+      "Lipides": 1.61,
+      "Sucres": 2.74,
+      "AGSaturés": 0.37,
+      "Sel": 1.28,
+      "Prix": 0.50,
+      "Categorie": "viennoiseries",
+      "Masse": 55
+    },
+    {
+      "AlimentName": "chocolatine",
+      "Protéines": 7.56,
+      "Glucides": 46.8,
+      "Lipides": 22.3,
+      "Sucres": 11.1,
+      "AGSaturés": 13.4,
+      "Sel": 1.1,
+      "Prix": 0.80,
+      "Categorie": "viennoiseries",
+      "Masse": 60
+    },
+    {
+      "AlimentName": "sandwichSalami",
+      "Protéines": 12,
+      "Glucides": 30.1,
+      "Lipides": 10.6,
+      "Sucres": 2.3,
+      "AGSaturés": 2.61,
+      "Sel": 1.1,
+      "Prix": 4.50,
+      "Categorie": "sandwichs",
+      "Masse": 60
+    },
+    {
+      "AlimentName": "clementine",
+      "Protéines": 0.81,
+      "Glucides": 9.17,
+      "Lipides": 0.5,
+      "Sucres": 8.6,
+      "AGSaturés": 0.01,
+      "Sel": 0.013,
+      "Prix": 0.50,
+      "Categorie": "fruits",
+      "Masse": 55
+    }
+  ]
+}
